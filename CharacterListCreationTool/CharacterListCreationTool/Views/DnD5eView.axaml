@@ -1,0 +1,96 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:vm="using:CharacterListCreationTool.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:lang="using:CharacterListCreationTool.Lang"
+			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="CharacterListCreationTool.Views.DnD5eView"
+			 x:DataType="vm:DnD5eViewModel">
+	<TabControl>
+		<TabItem>
+			<TabItem.HeaderTemplate>
+				<DataTemplate>
+					<Svg Path="/Assets/raceIcon.svg"
+						 Width="40"/>
+				</DataTemplate>
+			</TabItem.HeaderTemplate>
+			
+			<StackPanel Orientation="Vertical">
+				<StackPanel Orientation="Horizontal"
+							Spacing="5">
+					<Label FontSize="20"
+						   Content="{x:Static lang:Resources.DnD5eRaceTabRace}"/>
+					<ComboBox ItemsSource="{Binding Character.AvailableRaces}"
+							  SelectedItem="{Binding Character.Race}">
+						<ComboBox.ItemTemplate>
+							<DataTemplate>
+								<TextBlock Text="{Binding Name}"/>
+							</DataTemplate>
+						</ComboBox.ItemTemplate>
+					</ComboBox>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal"
+							Spacing="5"
+							IsVisible="{Binding SubracesAvailable}">
+					<Label FontSize="20"
+						   Content="{x:Static lang:Resources.DnD5eRaceTabSubrace}"/>
+					<ComboBox ItemsSource="{Binding Character.Race.AvailableSubraces}"
+							  SelectedItem="{Binding Character.Race.Subrace}">
+						<ComboBox.ItemTemplate>
+							<DataTemplate>
+								<TextBlock Text="{Binding Name}"/>
+							</DataTemplate>
+						</ComboBox.ItemTemplate>
+					</ComboBox>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal"
+							Spacing="5"
+							IsVisible="{Binding RaceFirstCustomBonusAvailable}">
+					<Label>1st Bonus</Label>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal"
+							Spacing="5"
+							IsVisible="{Binding RaceSecondCustomBonusAvailable}">
+					<Label>2nd Bonus</Label>
+				</StackPanel>
+			</StackPanel>
+		</TabItem>
+		<TabItem>
+			<TabItem.HeaderTemplate>
+				<DataTemplate>
+					<Svg Path="/Assets/classIcon.svg"
+						 Width="40"/>
+				</DataTemplate>
+			</TabItem.HeaderTemplate>
+
+		</TabItem>
+		<TabItem>
+			<TabItem.HeaderTemplate>
+				<DataTemplate>
+					<Svg Path="/Assets/statsIcon.svg"
+						 Width="40"/>
+				</DataTemplate>
+			</TabItem.HeaderTemplate>
+
+		</TabItem>
+		<TabItem>
+			<TabItem.HeaderTemplate>
+				<DataTemplate>
+					<Svg Path="/Assets/personalityIcon.svg"
+						 Width="40"/>
+				</DataTemplate>
+			</TabItem.HeaderTemplate>
+
+		</TabItem>
+		<TabItem>
+			<TabItem.HeaderTemplate>
+				<DataTemplate>
+					<Svg Path="/Assets/inventoryIcon.svg"
+						 Width="40"/>
+				</DataTemplate>
+			</TabItem.HeaderTemplate>
+
+		</TabItem>
+	</TabControl>
+</UserControl>

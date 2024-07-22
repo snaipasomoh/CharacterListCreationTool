@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterListCreationTool", "CharacterListCreationTool\CharacterListCreationTool\CharacterListCreationTool.csproj", "{801D1DB1-9B24-4964-B2FB-33F873A8D3F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterListCreationTool.Android", "CharacterListCreationTool\CharacterListCreationTool.Android\CharacterListCreationTool.Android.csproj", "{616361F3-3B71-47A1-A048-8A3CAEAED29E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterListCreationTool.Desktop", "CharacterListCreationTool\CharacterListCreationTool.Desktop\CharacterListCreationTool.Desktop.csproj", "{68466ABC-1B6D-4BCB-A408-754C37EB5FE5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterListCreationTool.iOS", "CharacterListCreationTool\CharacterListCreationTool.iOS\CharacterListCreationTool.iOS.csproj", "{196AE787-762A-40AB-BC0C-015C7600D796}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterListCreationTool.Browser", "CharacterListCreationTool\CharacterListCreationTool.Browser\CharacterListCreationTool.Browser.csproj", "{A9573D23-F175-4C8D-9BB3-BD7F03CEFFCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{801D1DB1-9B24-4964-B2FB-33F873A8D3F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{801D1DB1-9B24-4964-B2FB-33F873A8D3F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{801D1DB1-9B24-4964-B2FB-33F873A8D3F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{801D1DB1-9B24-4964-B2FB-33F873A8D3F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616361F3-3B71-47A1-A048-8A3CAEAED29E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616361F3-3B71-47A1-A048-8A3CAEAED29E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{616361F3-3B71-47A1-A048-8A3CAEAED29E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616361F3-3B71-47A1-A048-8A3CAEAED29E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616361F3-3B71-47A1-A048-8A3CAEAED29E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{68466ABC-1B6D-4BCB-A408-754C37EB5FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68466ABC-1B6D-4BCB-A408-754C37EB5FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68466ABC-1B6D-4BCB-A408-754C37EB5FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68466ABC-1B6D-4BCB-A408-754C37EB5FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{196AE787-762A-40AB-BC0C-015C7600D796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{196AE787-762A-40AB-BC0C-015C7600D796}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{196AE787-762A-40AB-BC0C-015C7600D796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{196AE787-762A-40AB-BC0C-015C7600D796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{196AE787-762A-40AB-BC0C-015C7600D796}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A9573D23-F175-4C8D-9BB3-BD7F03CEFFCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9573D23-F175-4C8D-9BB3-BD7F03CEFFCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9573D23-F175-4C8D-9BB3-BD7F03CEFFCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {216FB3D5-B57B-49F3-8BA1-0953414E022B}
+	EndGlobalSection
+EndGlobal
