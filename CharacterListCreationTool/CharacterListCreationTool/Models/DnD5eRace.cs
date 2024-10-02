@@ -270,9 +270,6 @@ namespace CharacterListCreationTool.Models
             StatsAvailableForCustomBonuses.Add(DnD5eStats.Constitution);
             StatsAvailableForCustomBonuses.Add(DnD5eStats.Intelligence);
             StatsAvailableForCustomBonuses.Add(DnD5eStats.Wisdom);
-
-            StatsWithCustomBonuses.Add(null);
-            StatsWithCustomBonuses.Add(null);
         }
     }
     #endregion

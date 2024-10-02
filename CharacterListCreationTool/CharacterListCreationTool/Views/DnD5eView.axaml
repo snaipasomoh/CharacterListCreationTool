@@ -44,15 +44,24 @@
 						</ComboBox.ItemTemplate>
 					</ComboBox>
 				</StackPanel>
-				<StackPanel Orientation="Horizontal"
+				<StackPanel Orientation="Vertical"
 							Spacing="5"
-							IsVisible="{Binding RaceFirstCustomBonusAvailable}">
-					<Label>1st Bonus</Label>
-				</StackPanel>
-				<StackPanel Orientation="Horizontal"
-							Spacing="5"
-							IsVisible="{Binding RaceSecondCustomBonusAvailable}">
-					<Label>2nd Bonus</Label>
+							IsVisible="{Binding RaceCustomBonusesAvailable}">
+					<Label FontSize="20"
+						   Content="{x:Static lang:Resources.DnD5eRaceCustomBonus}"/>
+					<ItemsRepeater ItemsSource="{Binding StatsForCustomBonuses}">
+						<ItemsRepeater.ItemTemplate>
+							<DataTemplate>
+								<StackPanel Orientation="Horizontal"
+											Spacing="5">
+									<Label FontSize="20"
+										   Content="{Binding Stat}"/>
+									<CheckBox IsChecked="{Binding IsUsed}"
+											  IsEnabled="{Binding IsEnabled}"/>
+								</StackPanel>
+							</DataTemplate>
+						</ItemsRepeater.ItemTemplate>
+					</ItemsRepeater>
 				</StackPanel>
 			</StackPanel>
 		</TabItem>

@@ -216,4 +216,7 @@
   <data name="MainWindowGamePathfinder" xml:space="preserve">
     <value>Pathfinder</value>
   </data>
+  <data name="DnD5eRaceCustomBonus" xml:space="preserve">
+    <value>Race bonus</value>
+  </data>
 </root>

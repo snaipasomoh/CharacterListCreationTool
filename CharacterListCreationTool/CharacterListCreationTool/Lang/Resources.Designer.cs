@@ -61,7 +61,16 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Race bonus.
+        /// </summary>
+        public static string DnD5eRaceCustomBonus {
+            get {
+                return ResourceManager.GetString("DnD5eRaceCustomBonus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dragonborn.
         /// </summary>
         public static string DnD5eRaceDragonborn {
             get {
@@ -70,7 +79,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Dwarf.
         /// </summary>
         public static string DnD5eRaceDwarf {
             get {
@@ -79,7 +88,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Elf.
         /// </summary>
         public static string DnD5eRaceElf {
             get {
@@ -88,7 +97,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Gnome.
         /// </summary>
         public static string DnD5eRaceGnome {
             get {
@@ -97,7 +106,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Half-elf.
         /// </summary>
         public static string DnD5eRaceHalfElf {
             get {
@@ -106,7 +115,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Halfling.
         /// </summary>
         public static string DnD5eRaceHalfling {
             get {
@@ -115,7 +124,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Half-orc.
         /// </summary>
         public static string DnD5eRaceHalfOrc {
             get {
@@ -124,7 +133,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Human.
         /// </summary>
         public static string DnD5eRaceHuman {
             get {
@@ -151,7 +160,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Tiefling.
         /// </summary>
         public static string DnD5eRaceTiefling {
             get {
@@ -160,7 +169,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Black Dragonborn.
         /// </summary>
         public static string DnD5eSubraceBlackDragonborn {
             get {
@@ -169,7 +178,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Blue Dragonborn.
         /// </summary>
         public static string DnD5eSubraceBlueDragonborn {
             get {
@@ -178,7 +187,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Brass Dragonborn.
         /// </summary>
         public static string DnD5eSubraceBrassDragonborn {
             get {
@@ -187,7 +196,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Bronze Dragonborn.
         /// </summary>
         public static string DnD5eSubraceBronzeDragonborn {
             get {
@@ -196,7 +205,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Copper Dragonborn.
         /// </summary>
         public static string DnD5eSubraceCopperDragonborn {
             get {
@@ -205,7 +214,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Drow.
         /// </summary>
         public static string DnD5eSubraceDrowElf {
             get {
@@ -214,7 +223,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Forest Gnome.
         /// </summary>
         public static string DnD5eSubraceForestGnome {
             get {
@@ -223,7 +232,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Gold Dragonborn.
         /// </summary>
         public static string DnD5eSubraceGoldDragonborn {
             get {
@@ -232,7 +241,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Green Dragonborn.
         /// </summary>
         public static string DnD5eSubraceGreenDragonborn {
             get {
@@ -241,7 +250,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to High Elf.
         /// </summary>
         public static string DnD5eSubraceHighElf {
             get {
@@ -250,7 +259,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Hill Dwarf.
         /// </summary>
         public static string DnD5eSubraceHillDwarf {
             get {
@@ -259,7 +268,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Lightfoot Halfling.
         /// </summary>
         public static string DnD5eSubraceLightfootHalfling {
             get {
@@ -268,7 +277,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Mountain Dwarf.
         /// </summary>
         public static string DnD5eSubraceMountainDwarf {
             get {
@@ -277,7 +286,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Red Dragonborn.
         /// </summary>
         public static string DnD5eSubraceRedDragonborn {
             get {
@@ -286,7 +295,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Rock Gnome.
         /// </summary>
         public static string DnD5eSubraceRockGnome {
             get {
@@ -295,7 +304,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Silver Dragonborn.
         /// </summary>
         public static string DnD5eSubraceSilverDragonborn {
             get {
@@ -304,7 +313,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Stout Halfling.
         /// </summary>
         public static string DnD5eSubraceStoutHalfling {
             get {
@@ -313,7 +322,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to White Dragonborn.
         /// </summary>
         public static string DnD5eSubraceWhiteDragonborn {
             get {
@@ -322,7 +331,7 @@ namespace CharacterListCreationTool.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Wood Elf.
         /// </summary>
         public static string DnD5eSubraceWoodElf {
             get {
