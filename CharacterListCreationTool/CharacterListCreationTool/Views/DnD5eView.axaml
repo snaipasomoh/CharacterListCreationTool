@@ -49,13 +49,13 @@
 							IsVisible="{Binding RaceCustomBonusesAvailable}">
 					<Label FontSize="20"
 						   Content="{x:Static lang:Resources.DnD5eRaceCustomBonus}"/>
-					<ItemsRepeater ItemsSource="{Binding StatsForCustomBonuses}">
+					<ItemsRepeater ItemsSource="{Binding AbilitiesForCustomBonuses}">
 						<ItemsRepeater.ItemTemplate>
 							<DataTemplate>
 								<StackPanel Orientation="Horizontal"
 											Spacing="5">
 									<Label FontSize="20"
-										   Content="{Binding Stat}"/>
+										   Content="{Binding Ability}"/>
 									<CheckBox IsChecked="{Binding IsUsed}"
 											  IsEnabled="{Binding IsEnabled}"/>
 								</StackPanel>

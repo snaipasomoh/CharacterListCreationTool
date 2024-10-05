@@ -6,6 +6,7 @@ using CharacterListCreationTool.Lang;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace CharacterListCreationTool.Models
 {
@@ -41,9 +42,9 @@ namespace CharacterListCreationTool.Models
         [ObservableProperty]
         private int customBonusSize = 0;
 
-        public ObservableCollection<DnD5eStats> StatsAvailableForCustomBonuses { get; } = new();
+        public ObservableCollection<DnD5eAbility> StatsAvailableForCustomBonuses { get; } = new();
 
-        public ObservableCollection<DnD5eStats?> StatsWithCustomBonuses { get; } = new();
+        public ObservableCollection<DnD5eAbility?> AbilitiesWithCustomBonuses { get; } = new();
 
         public ObservableCollection<DnD5eRace> AvailableSubraces { get; } = new();
     }
@@ -265,11 +266,11 @@ namespace CharacterListCreationTool.Models
             CustomBonusesQuantity = 2;
             CustomBonusSize = 1;
 
-            StatsAvailableForCustomBonuses.Add(DnD5eStats.Strength);
-            StatsAvailableForCustomBonuses.Add(DnD5eStats.Dexterity);
-            StatsAvailableForCustomBonuses.Add(DnD5eStats.Constitution);
-            StatsAvailableForCustomBonuses.Add(DnD5eStats.Intelligence);
-            StatsAvailableForCustomBonuses.Add(DnD5eStats.Wisdom);
+            StatsAvailableForCustomBonuses.Add(DnD5eAbility.Strength);
+            StatsAvailableForCustomBonuses.Add(DnD5eAbility.Dexterity);
+            StatsAvailableForCustomBonuses.Add(DnD5eAbility.Constitution);
+            StatsAvailableForCustomBonuses.Add(DnD5eAbility.Intelligence);
+            StatsAvailableForCustomBonuses.Add(DnD5eAbility.Wisdom);
         }
     }
     #endregion

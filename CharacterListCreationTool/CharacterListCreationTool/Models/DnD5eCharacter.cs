@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -80,7 +81,6 @@ namespace CharacterListCreationTool.Models
         private int charismaModifier = 0;
     }
 
-    public class DnD5eClass { }
     public class DnD5eBackground { }
     public class DnD5eAlignment { }
 }

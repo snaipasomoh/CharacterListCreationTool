@@ -12,10 +12,10 @@ namespace CharacterListCreationTool.ViewModels
 {
     public partial class DnD5eViewModel : ViewModelBase
     {
-        public partial class StatWithStuff : ObservableObject
+        public partial class AbilityWithStuff : ObservableObject
         {
             [ObservableProperty]
-            private DnD5eStats stat;
+            private DnD5eAbility ability;
 
             [ObservableProperty]
             private bool isUsed;
@@ -23,9 +23,9 @@ namespace CharacterListCreationTool.ViewModels
             [ObservableProperty]
             private bool isEnabled;
 
-            public StatWithStuff(DnD5eStats stat, bool isUsed = false, bool isEnabled = true)
+            public AbilityWithStuff(DnD5eAbility ability, bool isUsed = false, bool isEnabled = true)
             {
-                Stat = stat;
+                Ability = ability;
                 IsUsed = isUsed;
                 IsEnabled = isEnabled;
             }
@@ -40,51 +40,51 @@ namespace CharacterListCreationTool.ViewModels
         [ObservableProperty]
         private bool subracesAvailable = false;
 
-        public ObservableCollection<StatWithStuff> StatsForCustomBonuses { get; set; } = new();
+        public ObservableCollection<AbilityWithStuff> AbilitiesForCustomBonuses { get; set; } = new();
 
         public DnD5eViewModel()
         {
             character.PropertyChanged += Race_PropertyChanged;
         }
 
-        private void UpdateStatsForCustomBonuses()
+        private void UpdateAbilitiesForCustomBonuses()
         {
-            foreach (var statWithStuff in StatsForCustomBonuses)
+            foreach (var abilityWithStuff in AbilitiesForCustomBonuses)
             {
-                statWithStuff.PropertyChanged -= StatWithBool_PropertyChanged;
+                abilityWithStuff.PropertyChanged -= AbilityWithBool_PropertyChanged;
             }
-            StatsForCustomBonuses.Clear();
-            foreach (var stat in Character.Race!.StatsAvailableForCustomBonuses)
+            AbilitiesForCustomBonuses.Clear();
+            foreach (var ability in Character.Race!.StatsAvailableForCustomBonuses)
             {
-                StatWithStuff statWithBool = new(stat);
-                statWithBool.PropertyChanged += StatWithBool_PropertyChanged;
-                StatsForCustomBonuses.Add(statWithBool);
-            }
-        }
-
-        private void UpdateStatsForCustomBonusesState()
-        {
-            foreach (var statWithStuff in StatsForCustomBonuses)
-            {
-                statWithStuff.IsEnabled = statWithStuff.IsUsed || (Character.Race!.CustomBonusesQuantity > Character.Race.StatsWithCustomBonuses.Count);
+                AbilityWithStuff abilityWithBool = new(ability);
+                abilityWithBool.PropertyChanged += AbilityWithBool_PropertyChanged;
+                AbilitiesForCustomBonuses.Add(abilityWithBool);
             }
         }
 
-        private void StatWithBool_PropertyChanged(object? sender, PropertyChangedEventArgs e)
+        private void UpdateAbilitiesForCustomBonusesState()
         {
-            if (e.PropertyName == nameof(StatWithStuff.IsUsed))
+            foreach (var abilityWithStuff in AbilitiesForCustomBonuses)
+            {
+                abilityWithStuff.IsEnabled = abilityWithStuff.IsUsed || (Character.Race!.CustomBonusesQuantity > Character.Race.AbilitiesWithCustomBonuses.Count);
+            }
+        }
+
+        private void AbilityWithBool_PropertyChanged(object? sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == nameof(AbilityWithStuff.IsUsed))
             { 
-                if ((sender is StatWithStuff currStat))
+                if ((sender is AbilityWithStuff currAbility))
                 {
-                    if (currStat.IsUsed)
+                    if (currAbility.IsUsed)
                     {
-                        Character.Race!.StatsWithCustomBonuses.Add(currStat.Stat);
+                        Character.Race!.AbilitiesWithCustomBonuses.Add(currAbility.Ability);
                     }
                     else
                     {
-                        Character.Race!.StatsWithCustomBonuses.Remove(currStat.Stat);
+                        Character.Race!.AbilitiesWithCustomBonuses.Remove(currAbility.Ability);
                     }
-                    UpdateStatsForCustomBonusesState();
+                    UpdateAbilitiesForCustomBonusesState();
                 }
             }
         }
@@ -97,7 +97,7 @@ namespace CharacterListCreationTool.ViewModels
                 {
                     SubracesAvailable = Character.Race.AvailableSubraces.Count() > 0;
                     RaceCustomBonusesAvailable = Character.Race.CustomBonusesQuantity > 0;
-                    UpdateStatsForCustomBonuses();
+                    UpdateAbilitiesForCustomBonuses();
                 }
             }
         }
